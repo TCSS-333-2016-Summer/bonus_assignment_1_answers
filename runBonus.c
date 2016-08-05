@@ -73,6 +73,7 @@ int main(){
  for(int i=0;i<10;i++){
   printf("%d\n",a[i]);
 	}
+	free(a);
  //1 mark 
  //Write a function "joinStrings" takes as parameters 3 strings. It joins the first 2 together and puts the result in the third string
  //The function allocates memory for the third string using malloc
@@ -83,7 +84,7 @@ int main(){
  
  joinStrings(b,c,&d);
  printf("%s\n",d); 
-
+ free(d);
  //1 mark
  //write a function "arrayWrite" that takes as parameters an array of the same type as e, the size of the first dimension, and a string variables, binaryFilename
  //the function "arrayWrite" writes the values of the the array (starting from array[0][0] and ending at array[size-1][2]) to the binaryFilename
